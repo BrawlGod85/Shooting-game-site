@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blox Fruits Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="start-screen">
+      <h1>Blox Fruits Game</h1>
+      <p>
+        WASD to move, mouse to aim, click to shoot. Defeat enemies to level up!
+      </p>
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <canvas id="gameCanvas" style="display: none"></canvas>
+
+    <div id="ui" class="hidden">
+      <div id="hp-container">
+        <div id="hp-bar"></div>
+        <span id="hp-text">150/150</span>
+      </div>
+      <div id="ammo-container">
+        <div id="ammo-bar"></div>
+        <span id="ammo-text">100</span>
+      </div>
+      <div id="level-container">
+        Level: <span id="level">1</span> | XP: <span id="xp">0</span>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
